@@ -9,11 +9,11 @@ int main() {
 	for (int i = 1; i <= tc; i++) {
 		int N, B;
 		scanf("%d %d", &N, &B);
-	//	int * A = (int *)malloc(sizeof(int) * N);       // Å©±â N¸¸Å­ÀÇ ¹è¿­ »ı¼º
+	//	int * A = (int *)malloc(sizeof(int) * N);       // í¬ê¸° Në§Œí¼ì˜ ë°°ì—´ ìƒì„±
 		for (int j = 0; j < N; j++) {
-			scanf("%d", A+j);							// Å©±â NÀÎ ¹è¿­ A¿¡ Ai ÀÔ·Â¹Ş±â &A[j]·Î ÀÔ·Â¹ŞÀ¸¸é ¿À·ù»ı±è
+			scanf("%d", A+j);							// í¬ê¸° Nì¸ ë°°ì—´ Aì— Ai ì…ë ¥ë°›ê¸° &A[j]ë¡œ ì…ë ¥ë°›ìœ¼ë©´ ì˜¤ë¥˜ìƒê¹€
 		}
-		quick_sort(A, 0, N - 1);						// ¹è¿­ A ÄüÁ¤·ÄÇÏ±â
+		quick_sort(A, 0, N - 1);						// ë°°ì—´ A í€µì •ë ¬í•˜ê¸°
 		int cnt = 0;
 		int sum = 0;
 		for (int k = 0; k < N; k++) {
@@ -21,7 +21,7 @@ int main() {
 			if (B >= sum)
 				cnt++;
 			else
-				break;									// ¿¹»ê B¸¦ ³Ñ¾î°¡¸é for¹® ºüÁ®³ª°¡±â
+				break;									// ì˜ˆì‚° Bë¥¼ ë„˜ì–´ê°€ë©´ forë¬¸ ë¹ ì ¸ë‚˜ê°€ê¸°
 		}
 		printf("Case #%d: %d\n", i, cnt);
 	//	free(A);
@@ -31,9 +31,9 @@ int main() {
 
 void quick_sort(int arr[], int left,int right) {
 	if (left < right) {
-		int pivot = arr[left];  //  °¡Àå ¿ŞÂÊ pivot ¼³Á¤
-		int l = left + 1, r = right;	// pivot ¹Ù·Î ¿À¸¥ÂÊ left·Î ¼³Á¤ ¸Ç ¿À¸¥ÂÊ right ¼³Á¤
-		while (r >= l) {               //right°¡ leftº¸´Ù Å©°Å³ª °°À» ¶§ ±îÁö ÁøÇà 
+		int pivot = arr[left];  //  ê°€ì¥ ì™¼ìª½ pivot ì„¤ì •
+		int l = left + 1, r = right;	// pivot ë°”ë¡œ ì˜¤ë¥¸ìª½ leftë¡œ ì„¤ì • ë§¨ ì˜¤ë¥¸ìª½ right ì„¤ì •
+		while (r >= l) {               //rightê°€ leftë³´ë‹¤ í¬ê±°ë‚˜ ê°™ì„ ë•Œ ê¹Œì§€ ì§„í–‰ 
 			while (arr[l] <= pivot) {
 				l++;
 			}
@@ -57,4 +57,4 @@ void quick_sort(int arr[], int left,int right) {
 }
 
 
-// TLE ³ª¼­ countingsort ¹öÀüÀ» ½ÃµµÇØº»´Ù
+// TLE ë‚˜ì„œ countingsort ë²„ì „ì„ ì‹œë„í•´ë³¸ë‹¤
