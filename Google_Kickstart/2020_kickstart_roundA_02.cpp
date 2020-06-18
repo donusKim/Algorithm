@@ -5,7 +5,6 @@ int beauty_value[51][31];
 int dpmatrix[51][1501];
 int sum[51][31];
 int N, K, P;
-
 int main() {
 	int tc;
 	scanf("%d", &tc);
