@@ -53,11 +53,7 @@ void mergeSort(int l,int r) {
 		}
 	}
 	while (right < r + 1) temp[front++] = queue[right++];
-	
-	
 	while (left < mid + 1) temp[front++] = queue[left++];
-	
-	
 	for (int i = 0; i < r - l + 1; i++) {
 		queue[l + i] = temp[i];
 	}
