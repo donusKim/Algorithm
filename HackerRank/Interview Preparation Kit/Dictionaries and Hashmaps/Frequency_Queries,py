@@ -1,0 +1,70 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the freqQuery function below.
+def freqQuery(queries):
+    numDict={}
+    cntDict={}
+    ans=[]
+    for query in queries:
+        if query[0]<2:
+            if query[1] in numDict:
+                if numDict[query[1]] in cntDict:
+                    cntDict[numDict[query[1]]]=Max(cntDict[numDict[query[1]]]-1,0)
+                numDict[query[1]]+=1
+                if numDict[query[1]] in cntDict:
+                    cntDict[numDict[query[1]]]+=1
+                else:
+                    cntDict[numDict[query[1]]]=1
+            else:
+                numDict[query[1]]=1
+                if 1 in cntDict:
+                    cntDict[1]+=1
+                else:
+                    cntDict[1]=1
+        elif query[0]<3:
+            if query[1] in numDict:
+                if numDict[query[1]] in cntDict:
+                    cntDict[numDict[query[1]]]=Max(cntDict[numDict[query[1]]]-1,0)
+                numDict[query[1]]=Max(numDict[query[1]]-1,0)
+                if numDict[query[1]] in cntDict:
+                    cntDict[numDict[query[1]]]+=1
+                else:
+                    cntDict[numDict[query[1]]]=1
+        else:
+            f=query[1]
+            if f in cntDict and cntDict[f]>0:
+                ans.append(1)
+            else:
+                ans.append(0)
+
+    return ans
+
+def Max(a,b):
+    if a>b:
+        return a
+    else:
+        return b
+
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    q = int(input().strip())
+
+    queries = []
+
+    for _ in range(q):
+        queries.append(list(map(int, input().rstrip().split())))
+
+    ans = freqQuery(queries)
+
+    fptr.write('\n'.join(map(str, ans)))
+    fptr.write('\n')
+
+    fptr.close()
