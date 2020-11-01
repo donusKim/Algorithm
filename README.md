@@ -10,3 +10,6 @@
 
 ## 2. [Algorithm](https://github.com/donusKim/Algorithm/tree/master/Algorithm)
 
+## 3. [HackerRank](https://github.com/donusKim/Algorithm/tree/master/HackerRank)
+### - [Interview Preparation Kit](https://github.com/donusKim/Algorithm/tree/master/HackerRank/Interview%20Preparation%20Kit)
+
