@@ -1,5 +1,5 @@
 # Algorithm
-알고리즘 문제 풀어보기 ( With C, C++)
+알고리즘 문제 풀어보기 ( With C, Python)
 ## 1. [Google KickStart](https://github.com/donusKim/Algorithm/tree/master/Google_Kickstart)
 ### - [2020 Round A](https://github.com/donusKim/Algorithm/tree/master/Google_Kickstart/2020A)
 ### - [2020 Round B](https://github.com/donusKim/Algorithm/tree/master/Google_Kickstart/2020B)
