@@ -19,3 +19,6 @@
 
 
 ## 3. [Algorithm](https://github.com/donusKim/Algorithm/tree/master/Algorithm)
+### - [LIS](https://github.com/donusKim/Algorithm/blob/master/Algorithm/LIS(N*log(N)).cpp)
+### - [TSP](https://github.com/donusKim/Algorithm/blob/master/Algorithm/TSP(BY_DP).cpp)
+
