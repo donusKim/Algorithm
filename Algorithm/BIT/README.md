@@ -24,4 +24,4 @@ int getSum(int idx) {
 	return sum;
 } 
 ```
-> C로 작성된 BIT 자료구조 Code[https://github.com/donusKim/Algorithm/blob/master/Algorithm/BIT/BIT.cpp]
+> [C로 작성된 BIT 자료구조 Code](https://github.com/donusKim/Algorithm/blob/master/Algorithm/BIT/BIT.cpp)
