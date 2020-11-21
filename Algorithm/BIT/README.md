@@ -1,6 +1,5 @@
 # BIT (Binary Indexed Tree)
-```
-C++
+```cpp
 #include <stdio.h>
 #define maxN 50500
 int N;
