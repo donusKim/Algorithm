@@ -1,5 +1,6 @@
 #BIT (Binary Indexed Tree)
-"""
+<pre>
+<code>
 #include <stdio.h>
 #define maxN 50500
 int N;
@@ -43,4 +44,5 @@ int getSum(int idx) {
 	}
 	return sum;
 } 
-"""
+</code>
+</pre>
