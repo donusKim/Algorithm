@@ -1,6 +1,6 @@
-#BIT (Binary Indexed Tree)
-<pre>
-<code>
+# BIT (Binary Indexed Tree)
+"""
+C++
 #include <stdio.h>
 #define maxN 50500
 int N;
@@ -44,5 +44,4 @@ int getSum(int idx) {
 	}
 	return sum;
 } 
-</code>
-</pre>
+"""
