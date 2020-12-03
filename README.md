@@ -4,6 +4,8 @@
 ## 1. [Algorithm](https://github.com/donusKim/Algorithm/tree/master/Algorithm)
 ### - [LIS](https://github.com/donusKim/Algorithm/blob/master/Algorithm/LIS(N*log(N)).cpp)
 ### - [TSP](https://github.com/donusKim/Algorithm/blob/master/Algorithm/TSP(BY_DP).cpp)
+### - [BIT 자료구조](https://github.com/donusKim/Algorithm/tree/master/Algorithm/BIT)
+### - [TRIE 자료구조](https://github.com/donusKim/Algorithm/tree/master/Algorithm/Trie)
 
 ## 2. [Leetcode](https://github.com/donusKim/Algorithm/tree/master/Leetcode)
 
