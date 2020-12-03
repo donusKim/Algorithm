@@ -1,4 +1,4 @@
-[#연결리스트(LinkedList)를 활용한 스택구현](https://github.com/donusKim/Algorithm/blob/master/Algorithm/LinkedList/Stack(by%20LinkedList).cpp)
+#[연결리스트(LinkedList)를 활용한 스택구현](https://github.com/donusKim/Algorithm/blob/master/Algorithm/LinkedList/Stack(by%20LinkedList).cpp)
 
 - Insert
 ```cpp
