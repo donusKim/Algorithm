@@ -10,7 +10,8 @@ void insert(int v, struct Node* head) {
 	head->next = newNode;
 	// 개수 증가
 	head->value += 1;
-}```
+}
+```
 
 - Pop
 ```cpp
