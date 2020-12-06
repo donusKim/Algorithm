@@ -1,5 +1,5 @@
 # Algorithm
-알고리즘 문제 풀어보기 ( With C, Python)
+알고리즘 문제 풀어보기 
 
 ## 1. [Algorithm](https://github.com/donusKim/Algorithm/tree/master/Algorithm)
 ### - [LIS](https://github.com/donusKim/Algorithm/blob/master/Algorithm/LIS(N*log(N)).cpp)
