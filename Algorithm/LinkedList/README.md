@@ -1,5 +1,6 @@
 ## 연결리스트(LinkedList)를 활용한 스택구현
-- [풀이](https://github.com/donusKim/Algorithm/blob/master/Algorithm/LinkedList/Stack(by%20LinkedList).cpp)
+### [Code](https://github.com/donusKim/Algorithm/blob/master/Algorithm/LinkedList/Stack(by%20LinkedList).cpp)
+
 - Insert
 ```cpp
 void insert(int v, struct Node* head) {
@@ -36,6 +37,6 @@ int getCount(struct Node* head) {
 }
 ```
 
-## 연결리스트(LinkedList)를 활용한 예제: 키로거
-### [백준 5397번](https://www.acmicpc.net/problem/5397)
-- [풀이](https://github.com/donusKim/Algorithm/blob/master/Algorithm/LinkedList/Stack(by%20LinkedList).cpp)
+## 연결리스트(LinkedList)를 활용한 예제 : 키로거 문제
+### [문제](https://www.acmicpc.net/problem/5397)
+### [Code](https://github.com/donusKim/Algorithm/blob/master/Algorithm/LinkedList/BJ5397.cpp)
