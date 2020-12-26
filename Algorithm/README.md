@@ -7,5 +7,4 @@
 - [Linked List 자료구조](https://github.com/donusKim/Algorithm/tree/master/Algorithm/LinkedList)
 
 ### 알고리즘 
-- [LIS](https://github.com/donusKim/Algorithm/blob/master/Algorithm/LIS(N*log(N)).cpp)
-- [TSP](https://github.com/donusKim/Algorithm/blob/master/Algorithm/TSP(BY_DP).cpp)
+- [TSP](https://github.com/donusKim/Algorithm/blob/master/Algorithm/TSP)
