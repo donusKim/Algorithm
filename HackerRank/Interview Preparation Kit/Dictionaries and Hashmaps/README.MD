@@ -4,9 +4,9 @@
 - [문제링크](https://www.hackerrank.com/challenges/count-triplets-1/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps)
 - [풀이코드](https://github.com/donusKim/Algorithm/blob/master/HackerRank/Interview%20Preparation%20Kit/Dictionaries%20and%20Hashmaps/Count_Triplets.py)
 - **문제요약**
-> 길이가 n인 배열 arr가 주어지고 공비 r이 주어졌을 때 배열내에서 공비 r인 등비수열을 이루는 3가지 숫자의 순서쌍의 개수를 구하는 문제
+> **길이가 n인 배열 arr가 주어지고 공비 r이 주어졌을 때 배열내에서 공비 r인 등비수열을 이루는 3가지 숫자의 순서쌍의 개수를 구하는 문제**
 - **메인로직** 
-> num_dict, r_dict, rr_dict를 업데이트 하는 로직 
+> **num_dict, r_dict, rr_dict를 업데이트 하는 로직**
 ```python
 """
     arr를 순회하면서 세가지 Dictionary를 채워넣는다.
@@ -31,7 +31,7 @@ for num in range(arr_len):
         else:
             rr_dict[arr[num]]=r_dict[arr[num]//r]
 ```
-> 업데이트된 Dict를 이용해 답을 구하는 로직
+> **업데이트된 Dict를 이용해 답을 구하는 로직**
 ```python
 """
     r>1인 경우: rr_dict의 값들을 더한다
