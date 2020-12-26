@@ -1,59 +1,45 @@
-#!/bin/python3
-
 import math
 import os
 import random
 import re
 import sys
 
-# Complete the countTriplets function below.
 def countTriplets(arr, r):
-    arrLen=len(arr)
-    numDict={}
-    rDict={}
-    rrDict={}
+    """
+    arr를 순회하면서 세가지 Dictionary를 채워넣는다.
+    num_dict: arr 원소들의 개수를 count하는 Dict
+    r_dict: r의 배수이면서 r로나눈 몫이 arr의 원소인 arr의 원소의 개수를 count하는 Dict
+    rr_dict: r^2의 배수이면서 r로나눈 몫이 r_dict의 원소인 arr의 원소의 개수를 count하는 Dict
+    """
+    arr_len=len(arr)
+    num_dict={}
+    r_dict={}
+    rr_dict={}
     ans=0
-    ## 3개의 사전을 채워나갈 것
-    for num in range(arrLen):
-        if arr[num] in numDict:
-            numDict[arr[num]]+=1
+    for num in range(arr_len):
+        if arr[num] in num_dict:
+            num_dict[arr[num]]+=1
         else:
-            numDict[arr[num]]=1
-        if arr[num]%r<1 and arr[num]//r in numDict:
-            if arr[num] in rDict:
-                rDict[arr[num]]+=numDict[arr[num]//r]
+            num_dict[arr[num]]=1
+            
+        if arr[num]%r<1 and arr[num]//r in num_dict: 
+            if arr[num] in r_dict:
+                r_dict[arr[num]]+=num_dict[arr[num]//r]
             else:
-                rDict[arr[num]]=numDict[arr[num]//r]
-        if arr[num]%(r*r)<1 and arr[num]//r in rDict:
-            if arr[num] in rrDict:
-                rrDict[arr[num]]+=rDict[arr[num]//r]
+                r_dict[arr[num]]=num_dict[arr[num]//r]
+        if arr[num]%(r*r)<1 and arr[num]//r in r_dict:
+            if arr[num] in rr_dict:
+                rr_dict[arr[num]]+=r_dict[arr[num]//r]
             else:
-                rrDict[arr[num]]=rDict[arr[num]//r]
+                rr_dict[arr[num]]=r_dict[arr[num]//r]
 
     if r>1:
-        for num in rrDict:
-            ans+=rrDict[num]
+        for num in rr_dict:
+            ans+=rr_dict[num]
             
     else:
-        for num in numDict:
-            if(numDict[num]>2):
-                ans+=numDict[num]*(numDict[num]-1)*(numDict[num]-2)//6
+        for num in num_dict:
+            if(num_dict[num]>2):
+                ans+=num_dict[num]*(num_dict[num]-1)*(num_dict[num]-2)//6
 
     return ans
-    
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-    nr = input().rstrip().split()
-
-    n = int(nr[0])
-
-    r = int(nr[1])
-
-    arr = list(map(int, input().rstrip().split()))
-
-    ans = countTriplets(arr, r)
-
-    fptr.write(str(ans) + '\n')
-
-    fptr.close()
