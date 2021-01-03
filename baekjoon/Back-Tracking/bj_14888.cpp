@@ -23,8 +23,7 @@ int main() {
 }
 
 void dfs(int step, long long cusum, int plus, int minus, int mul, int div) {
-	// 종료조건
-	if (step == arrLen - 1) {
+    if (step == arrLen - 1) {
 		if (cusum > max)
 			max = cusum;
 		if (min > cusum)
